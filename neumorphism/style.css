@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: ubuntu;
+}
+
+body {
+  background: #e0e0e0;
+}
+
+.neumorphic-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+
+  transform: translate(-50%, -50%);
+
+  background-color: red;
+  overflow: hidden;
+  width: 1000px;
+  height: 600px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* glassmorpic effect */
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  border: 2px solid #e1e1e1;
+  cursor: pointer;
+
+  font-size: 60px;
+  color: #c0c0c0;
+  letter-spacing: 3px;
+}
+
+.neumorphic-card p {
+  user-select: none;
+}
+
+.neumorphic-card:hover .red {
+  /* border-color: red; */
+  color: rgba(255, 0, 0, 0.7);
+  text-shadow: 1px 1px 15px red;
+}
+.neumorphic-card:hover .yellow {
+  /* border-color: red; */
+  color: yellow;
+  text-shadow: 1px 1px 15px yellow;
+}
+.neumorphic-card:hover .blue {
+  /* border-color: red; */
+  color: rgba(0, 0, 255, 0.7);
+  text-shadow: 1px 1px 15px blue;
+}
