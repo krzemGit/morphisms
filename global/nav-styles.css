@@ -1,0 +1,53 @@
+nav {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin-bottom: 15px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  background-color: #ffffff30;
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+  list-style: none;
+  box-shadow: 0 2px 12px 0 rgba(31, 38, 135, 0.47);
+}
+
+nav ul li:hover {
+  transform: scale(1.1);
+  background-color: #ffffff80;
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+}
+
+nav ul li.selected {
+  border-width: 2px;
+  font-weight: 600;
+  color: red;
+}
+
+nav ul li a {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding-top: 4px;
+  font-family: "Ubuntu", sans-serif;
+}
